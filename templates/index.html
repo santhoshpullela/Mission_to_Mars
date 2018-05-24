@@ -65,24 +65,32 @@
     <div class="row" style="padding-bottom:20px">
         <div class="col-sm-1"></div>
         <div class="col-sm-5 border">
-            <img src={{ mars.Mars_hem[0]["Image_Url"] }} alt="" style="width:100%">
-            <p class="caption">{{ mars.Mars_hem[0]["Title"] }}</p>
+            {% if (mars) %}
+                <img src={{ mars.Mars_hem[0]["Image_Url"] }} alt="" style="width:100%">
+                <p class="caption">{{ mars.Mars_hem[0]["Title"] }}</p>
+            {% endif %}
         </div>
         <div class="col-sm-5 border" >
-            <img src={{ mars.Mars_hem[1]["Image_Url"] }} alt="" style="width:100%">
-            <p class="caption">{{ mars.Mars_hem[1]["Title"] }}</p>
+            {% if (mars) %}
+                <img src={{ mars.Mars_hem[1]["Image_Url"] }} alt="" style="width:100%">
+                <p class="caption">{{ mars.Mars_hem[1]["Title"] }}</p>
+                {% endif %}
         </div>
         <div class="col-sm-1"></div>
     </div>
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-5 border" >
-            <img src={{ mars.Mars_hem[2]["Image_Url"] }} alt="" style="width:100%">
-            <p class="caption">{{ mars.Mars_hem[2]["Title"] }}</p>
+            {% if (mars) %}
+                <img src={{ mars.Mars_hem[2]["Image_Url"] }} alt="" style="width:100%">
+                <p class="caption">{{ mars.Mars_hem[2]["Title"] }}</p>
+            {% endif %}
         </div>
         <div class="col-sm-5 border" >
-            <img src={{ mars.Mars_hem[3]["Image_Url"] }} alt="" style="width:100%">
-            <p class="caption">{{ mars.Mars_hem[3]["Title"] }}</p>
+            {% if (mars) %}
+                <img src={{ mars.Mars_hem[3]["Image_Url"] }} alt="" style="width:100%">
+                <p class="caption">{{ mars.Mars_hem[3]["Title"] }}</p>
+            {% endif %}
         </div>
         <div class="col-sm-1"></div>
     </div>
